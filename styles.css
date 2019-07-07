@@ -31,6 +31,8 @@ div img {
     background-color: #ccc;
     border: 3px solid #333;
     padding: 10px;
+    overflow: scroll;
+    height: 500px !important;
 }
 
 .flex-container {
