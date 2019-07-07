@@ -7,6 +7,11 @@ body {
     background-color: #111;
 }
 
+div img {
+    width: 98px;
+    height: 98px;
+}
+
 .title {
     font-size: 8rem;
 }
@@ -25,17 +30,26 @@ body {
 .pane {
     background-color: #ccc;
     border: 3px solid #333;
+    padding: 10px;
 }
 
 .flex-container {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    padding: 5px 0 0;
+}
+
+.class-icon:last-child {
+    margin-bottom: 10px;
 }
 
 .class-icon {
     height: 98px;
     width: 98px;
-    margin-top: 10px;
+    margin-top: 5px;
+    align-self: flex-start;
 }
 
 .class-icon:hover {
