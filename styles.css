@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Zelda;
+    src: url("botw.otf") format("opentype");
+}
+
+.zelda {
+    font-family: Zelda;
+}
