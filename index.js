@@ -232,8 +232,11 @@ $(document).ready(() => {
     });
 
     document.getElementById('roll-btn').onclick = () => {
-        let cl = classes[Math.floor(Math.random()*classes.length)];
+        let clNum = Math.floor(Math.random()*classes.length);
+        let cl = classes[clNum];
+
         populateLeftPane(cl);
+        $('.class-list').children().eq(clNum).addClass('selected');
         console.log(cl.name + ' chosen randomly!');
     }
 });
@@ -246,6 +249,7 @@ const populatePage = (e) => {
 
     classIcon.onclick = () => {
         populateLeftPane(e);
+        classIcon.classList.add('selected');
     };
     
     classIcon.appendChild(classImg);
@@ -254,6 +258,7 @@ const populatePage = (e) => {
 
 const populateLeftPane = (e) => {
     document.querySelector('#class-name').innerHTML = e.name;
+    $('.class-icon').removeClass('selected');
     
     let equipmentList = document.getElementById("equipment-list");
     while (equipmentList.firstChild) {

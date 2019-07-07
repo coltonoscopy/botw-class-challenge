@@ -55,3 +55,8 @@ div img {
 .class-icon:hover {
     background-color: #777;
 }
+
+.selected {
+    background-color: #ffaa99;
+    border: 2px solid #ff9999;
+}
