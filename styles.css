@@ -3,6 +3,41 @@
     src: url("botw.otf") format("opentype");
 }
 
+body {
+    background-color: #111;
+}
+
+.title {
+    font-size: 8rem;
+}
+
+.subtitle {
+    font-size: 4rem;
+    position: relative;
+    bottom: 40px;
+}
+
 .zelda {
     font-family: Zelda;
+    color: #ddd;
+}
+
+.pane {
+    background-color: #ccc;
+    border: 3px solid #333;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.class-icon {
+    height: 98px;
+    width: 98px;
+    margin-top: 10px;
+}
+
+.class-icon:hover {
+    background-color: #777;
 }
